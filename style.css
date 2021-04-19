@@ -2,8 +2,32 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Work Sans", sans-serif;
 }
 
 header {
-  background-image: url(https://image.freepik.com/vetores-gratis/fundo-branco-abstrato_23-2148810113.jpg);
+  background-image: url(images/cabecalho.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+header img {
+  width: 100%;
+  max-width: 340px;
+  border-radius: 100%;
+  margin: 30px;
+}
+
+h1 {
+  color: rgb(123, 125, 128);
+
+  flex-direction: column;
+  font-size: 4rem;
+  text-transform: uppercase;
 }
