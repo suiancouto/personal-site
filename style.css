@@ -17,7 +17,7 @@
   height: 100vh;
 }
 
-#container .content img {
+.content img {
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -62,23 +62,25 @@ h1 {
 
 }
 
-#sobre h3 {
+h3 {
   color: rgb(59, 102, 167);
   font-size: 28px;
+  text-transform: uppercase;
 }
 
 .sobre-mim p {
-  background-color: rgb(236, 181, 181);
+  background-color:rgb(251, 210, 210);
   border-radius: 10px;
   max-width: 1028px;
   margin-top: 40px auto;
   padding: 50px;
   margin-right: 40px;
+  margin-top: 33px;
 }
 
 
 .sobre-carreira p {
-  background-color: rgb(236, 181, 181);
+  background-color:rgb(251, 210, 210);
   border-radius: 10px;
   max-width: 1028px;
   margin-top: 40px auto;
@@ -86,12 +88,15 @@ h1 {
   margin-left: 40pxs;
 }
 
+footer {
+  text-align: center;
 
+}
 
 @media (max-width: 930px) {
   #sobre {
     display: flex;
-    flex-direction: column ;
+    flex-direction: column;
   }
 
 }
