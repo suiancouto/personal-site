@@ -6,28 +6,92 @@
   font-family: "Work Sans", sans-serif;
 }
 
-header {
+#container {
   background-image: url(images/cabecalho.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
   height: 100vh;
 }
 
-header img {
+#container .content img {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   width: 100%;
   max-width: 340px;
   border-radius: 100%;
-  margin: 30px;
+}
+
+.texto-sobre {
+  padding: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 500px;
+  text-align: justify;
 }
 
 h1 {
-  color: rgb(123, 125, 128);
-
+  color: rgb(59, 102, 167);
+  display: flex;
+  align-items: center;
   flex-direction: column;
-  font-size: 4rem;
+  font-size: 3rem;
   text-transform: uppercase;
+}
+
+.texto-sobre a {
+  background-color: lightcoral;
+  border-radius: 50px;
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  flex-direction: column;
+  margin-top: 30px;
+  padding: 16px 51px;
+}
+
+#sobre {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+
+}
+
+#sobre h3 {
+  color: rgb(59, 102, 167);
+  font-size: 28px;
+}
+
+.sobre-mim p {
+  background-color: rgb(236, 181, 181);
+  border-radius: 10px;
+  max-width: 1028px;
+  margin-top: 40px auto;
+  padding: 50px;
+  margin-right: 40px;
+}
+
+
+.sobre-carreira p {
+  background-color: rgb(236, 181, 181);
+  border-radius: 10px;
+  max-width: 1028px;
+  margin-top: 40px auto;
+  padding: 40px;
+  margin-left: 40pxs;
+}
+
+
+
+@media (max-width: 930px) {
+  #sobre {
+    display: flex;
+    flex-direction: column ;
+  }
+
 }
