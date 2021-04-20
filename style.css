@@ -59,7 +59,6 @@ h1 {
   display: flex;
   justify-content: space-between;
   padding: 20px;
-
 }
 
 h3 {
@@ -69,6 +68,7 @@ h3 {
 }
 
 .sobre-mim p {
+  display: flex;
   background-color:rgb(251, 210, 210);
   border-radius: 10px;
   max-width: 1028px;
@@ -80,23 +80,103 @@ h3 {
 
 
 .sobre-carreira p {
+  display: flex;
   background-color:rgb(251, 210, 210);
   border-radius: 10px;
   max-width: 1028px;
-  margin-top: 40px auto;
-  padding: 40px;
-  margin-left: 40pxs;
+  padding: 40px 20px;
+  margin-top: 33px;
+
+}
+
+.projetos {
+  padding-bottom: 60px;
+  margin-top: 30px;
+}
+
+.projetos h3 {
+	padding: 60px;
+	margin-top: 51px;
+  margin-bottom: 60pxs;
+	text-align: center;
+}
+
+/*
+.projetos {
+  background-color: rgb(235, 227, 227);
+} */
+
+.card1, .card2 {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.projetos a {
+  background-color: lightcoral;
+  border-radius: 50px;
+  color: aliceblue;
+  align-items: center;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 50px;
+  padding: 10px 40px;
+}
+
+.redes-sociais {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: rgb(235, 227, 227);
+  padding: 60px;
+}
+
+.redes-sociais h3 {
+  display: flex;
+  text-align: left;
+  align-items: center;
+}
+
+.redes-sociais a {
+  display: flex;
+  flex-direction: row;
+
+  text-align: center;
+  /* margin-bottom: 80px;
+  margin-top: 80px; */
+
+}
+
+.icone1, .icone2, a, img {
+  margin-left: 10px;
+  text-align: center;
+  border-right: 60px;
 }
 
 footer {
+  background-color: rgb(103, 134, 182);
+  color: aliceblue;
+  padding: 10px 40px;
   text-align: center;
-
 }
 
-@media (max-width: 930px) {
+@media (max-width: 980px) {
   #sobre {
     display: flex;
     flex-direction: column;
   }
+}
 
+@media (max-width: 845px) {
+  .content img {
+    display: none;
+  }
+}
+
+@media (max-width: 540px) {
+  .redes-sociais, .icone1, .icone2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
 }
